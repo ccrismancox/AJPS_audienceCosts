@@ -5,6 +5,7 @@
 
 # Replication package contents
 
+## Note for dataverse
 If you downloaded and extracted this replication archive from the tar.gz file then the file and folder structure will be correct (as it is listed below).
 However, if you downloaded the files as they are from the dataverse page you will first need to create the folder structure outlined below and place the files in the correct folders.
 
@@ -12,10 +13,9 @@ However, if you downloaded the files as they are from the dataverse page you wil
 ## File structure
 Main folder:
 
-- `readme.txt`: plain text version of this pdf
-- `readme.md`: plain text version of this pdf 
-- `readme.pdf`: This document
-- `xubuntu-14.04-desktop-amd64.iso`: CD image of Xubuntu 14.04 (Trusty Tahir), the operating system used in the estimation.
+- `readme.txt`: plain text version
+- `readme.md`: plain text version 
+- `readme.pdf`: This document in pdf format
 - `fullReplication.sh`: a bash script file that installs all necessary software and runs all the replication code. Once Xubuntu 14.04 is running, this file will setup all software, compile the dataset and replicate all results
 - `Data`: a folder containing the following 
     - `DyadicDataCreate.R`: File to combine all the data from the Sources folder (below) and create the dataset used throughout the paper. Creates the file DyadicMIDS_Rdata.rdata
@@ -108,7 +108,7 @@ We recommend printing this section out before beginning.
 
 1. On a Windows PC download the Rufus tool to create a "bootable" flash drive and download the CD image (.iso file) associated with Xubuntu 14.04
     - Rufus Link: [Rufus disk utility link](https://rufus.akeo.ie/)
-    - The iso file is found in the main replication folder. We also provide a direct link: [iso link](http://cdimage.ubuntu.com/xubuntu/releases/14.04/release/xubuntu-14.04-desktop-amd64.iso)
+    - The iso file can be downloaded from: [this link](http://cdimage.ubuntu.com/xubuntu/releases/14.04/release/xubuntu-14.04-desktop-amd64.iso)
 2. Run Rufus with the Xubuntu disk image
     - Follow Dell's  instructions for creating a bootable USB provided here:
 	[link](http://www.dell.com/support/article/us/en/04/SLN296810/creating-a-bootable-usb-device-with-rufus-for-updating-dell-poweredge-servers?lang=EN)
