@@ -14,9 +14,8 @@ However, if you downloaded the files as they are from the dataverse page you wil
 Main folder:
 
 - `readme.txt`: plain text readme
-- `readme.md`: plain text readme 
+- `readme.md`: plain text readme
 - `readme.pdf`: This document in pdf format
-- `xubuntu-14.04-desktop-amd64.iso`: CD image of Xubuntu 14.04 (Trusty Tahir), the operating system used in the estimation.
 - `fullReplication.sh`: a bash script file that installs all necessary software and runs all the replication code. Once Xubuntu 14.04 is running, this file will setup all software, compile the dataset and replicate all results
 - `Data`: a folder containing the following 
     - `DyadicDataCreate.R`: File to combine all the data from the Sources folder (below) and create the dataset used throughout the paper. Creates the file DyadicMIDS_Rdata.rdata
