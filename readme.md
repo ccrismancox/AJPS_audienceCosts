@@ -116,7 +116,7 @@ We recommend printing this section out before beginning.
 	- All other options can remain at their default
 3. Insert bootable flash drive into a powered down computer and turn the machine on.
     - As soon as you power on the machine repeatedly press whatever key takes you to the machine's boot menu	
-    - The exact key will vary with machine make and model, common keys include F12 (DELL, Most ACERs),   F8 (Most ASUS), and ESC (HP and some ASUS).  See [this link for more information](www.disk-image.com/faq-bootmenu.htm)
+    - The exact key will vary with machine make and model, common keys include F12 (DELL, Most ACERs),   F8 (Most ASUS), and ESC (HP and some ASUS).  See [this link](http://www.disk-image.com/faq-bootmenu.htm) for more information.
 4. Once in the boot menu, select the option to boot from USB
 5. At this point, you should be given the option to either install Xubuntu or Try Xubuntu.  Select "Try." This will take you to the desktop
 6. Download the replication package (the web browser can be found by clicking on the "whisker menu" --small blue circle with a white mouse-- in the upper left-hand corner of the screen.  The first thing listed will be "Web Browser")
