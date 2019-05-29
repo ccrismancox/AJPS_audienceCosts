@@ -58,7 +58,7 @@ sudo easy_install rpy2
 sudo easy_install mpi4py
 
 # ADOLC, Colpack, and IPOPT, use code stored on my bitbucket to help here
-git clone https://ccrismancox@bitbucket.org/ccrismancox/pyopt.git
+git clone https://ccrismancox@bitbucket.org/ccrismancox/pyopterf_replication.git pyopt
 cd pyopt
 svn checkout http://svn.pyopt.org/trunk pyopt
 cd pyopt
