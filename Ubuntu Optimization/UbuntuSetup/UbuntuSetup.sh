@@ -60,11 +60,6 @@ sudo easy_install mpi4py
 # ADOLC, Colpack, and IPOPT, use code stored on my bitbucket to help here
 git clone https://ccrismancox@bitbucket.org/ccrismancox/pyopterf_replication.git pyopt
 cd pyopt
-svn checkout http://svn.pyopt.org/trunk pyopt
-cd pyopt
-sudo python setup.py install
-
-cd ..
 bash setup.sh
 
 sudo echo "/home/xubuntu/pyopt/Ipopt-3.12.3/lib/"$'\r' | sudo tee -a  /etc/ld.so.conf
