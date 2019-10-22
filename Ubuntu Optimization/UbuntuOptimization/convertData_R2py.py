@@ -12,7 +12,7 @@ print "CONVERTING DATA FROM R TO PYTHON"
 
 #open a connection to R and load data
 robj.r("load('../../Data/DyadicMIDS_Rdata.rdata')")
-robj.r("install.packages('data.table', lib='~/R/x86_64-pc-linux-gnu-library/3.4', repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)")
+#robj.r("install.packages('data.table', lib='~/R/x86_64-pc-linux-gnu-library/3.4', repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)")
 robj.r("library(data.table)")
 Xi = rpd.convert_robj(robj.r('Xi'))
 Xij = rpd.convert_robj(robj.r('Xij'))

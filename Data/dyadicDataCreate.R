@@ -8,11 +8,8 @@ try(sapply(paste("package:",names(sessionInfo()$other), sep=""),
            detach, character.only=T, unload=T), silent=T)
 
 #### Fresh installs to keep things consistent ####
-if(sessionInfo()$running=="Ubuntu 14.04"){ # are we in the live world?
-  libDir <- '~/R/x86_64-pc-linux-gnu-library/3.4' #if so, use the dir created by ubuntuSetup.sh
-}else{ 
-  libDir <- .libPaths()[1] #else stick with the default
-}
+libDir <- .libPaths()[1] #else stick with the default
+
 
 install.packages('stringr', lib=libDir, repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)
 install.packages('data.table', lib=libDir, repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)

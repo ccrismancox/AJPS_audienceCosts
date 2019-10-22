@@ -33,10 +33,12 @@
 #### Git and verion control software
 #### other dependencies
 
-cd /home/xubuntu
-sudo apt-get update
+REPDIR=`pwd`
+cd ~
+HOMEDIR=`pwd`
+sudo apt update
+sudo apt -y upgrade
 
-sudo apt-get -y upgrade
 sudo apt-get -y install build-essential
 sudo apt-get -y install python-dev  git 
 sudo apt-get -y install texlive-full
@@ -46,25 +48,39 @@ sudo apt-get -y install subversion swig
 sudo apt-get -y install openmpi-bin openmpi-doc libopenmpi-dev
 
 # Install R
-sudo echo "deb http://lib.stat.cmu.edu/R/CRAN/bin/linux/ubuntu trusty/"$'\r' | sudo tee -a  /etc/apt/sources.list
-
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-sudo apt-get -y  update
 sudo apt-get -y  install r-base-dev
 mkdir -p ~/R/x86_64-pc-linux-gnu-library/3.4 
 
+sudo apt -y install libboost-all-dev
+sudo apt -y install libboost-python-dev
+sudo apt -y install libboost-system-dev
+
 # Additional python packages
-sudo easy_install rpy2
-sudo easy_install mpi4py
+sudo pip install numpy --upgrade
+sudo pip install rpy2==2.8.6
+sudo pip install pandas --upgrade
+sudo pip install mpi4py
 
 # ADOLC, Colpack, and IPOPT, use code stored on my bitbucket to help here
-git clone https://ccrismancox@bitbucket.org/ccrismancox/pyopterf_replication.git pyopt
-cd pyopt
+git clone https://ccrismancox@bitbucket.org/ccrismancox/pyopterf_windows.git pyopterf
+cd pyopterf
 bash setup.sh
 
-sudo echo "/home/xubuntu/pyopt/Ipopt-3.12.3/lib/"$'\r' | sudo tee -a  /etc/ld.so.conf
+libdir=${HOMEDIR}/pyopterf/Ipopt-3.12.3/lib
+sudo echo $libdir$'\r' | sudo tee -a  /etc/ld.so.conf
 sudo ldconfig
 
-echo "Xubuntu Setup Complete"
+sudo apt -y install libgfortran3 #where does this go?
 
+
+#Additional R work
+sudo apt -y install  libcurl4-gnutls-dev libxml2-dev libssl-dev
+cd ~
+mkdir -p Documents
+
+
+
+sudo pip install numpy==1.8.1
+sudo pip install pandas==0.13.1
+echo "Ubuntu Setup Complete"
 
