@@ -25,7 +25,7 @@ Note that this is the third update to the  archive.  In this update, we move to 
 ```bash
 bash fullReplication.sh
 ```
-9. Alternatively, if you prefer to run the estimation and analysis files individually, you can just install all necessary software at this point by navigating to `/home/<USER>/Replication/Ubuntu Optimization/UbuntuSetup`, opening the terminal (again by right clicking and selecting "Open Terminal Here" and running the command
+7. Alternatively, if you prefer to run the estimation and analysis files individually, you can just install all necessary software at this point by navigating to `/home/<USER>/Replication/Ubuntu Optimization/UbuntuSetup`, opening the terminal (again by right clicking and selecting "Open Terminal Here" and running the command
 ```bash
 bash UbuntuSetup.sh
 ```
