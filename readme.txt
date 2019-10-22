@@ -125,16 +125,13 @@ Main folder:
 ```bash
 bash fullReplication.sh
 ```
-9. Alternatively, if you prefer to run the estimation and analysis files individually, you can just install all necessary software at this point by navigating to `/home/<USER>/Replication/Ubuntu Optimization/UbuntuSetup`, opening the terminal (again by right clicking and selecting "Open Terminal Here" and running the command
+7. Alternatively, if you prefer to run the estimation and analysis files individually, you can just install all necessary software at this point by navigating to `/home/<USER>/Replication/Ubuntu Optimization/UbuntuSetup`, opening the terminal (again by right clicking and selecting "Open Terminal Here" and running the command
 ```bash
 bash UbuntuSetup.sh
 ```
 This step may take up to 30 minutes depending on computer and internet speed.
 
-    - You will be required to press "Enter" at some point (roughly 20 minutes) into the process.
-    - As the software updates, other background options may occur (screen resolution may adjust, printers may be discovered, other drives may be mounted, etc.)
-    - Errors may appear during this process, but so long as the code does not stop, they can be safely ignored
-    - When `UbuntuSetup.sh` finishes, the line  "`Ubuntu Setup Complete`" will print to the screen 
+8. During this step you may need to enter your password (chosen in step 3) or press "Enter" at various points.  When `UbuntuSetup.sh` finishes, the line  "`Ubuntu Setup Complete`" will print to the screen 
 
 # Instructions for compiling the dataset
 To recreate our dataset from scratch we use the file `/home/<USER>/Replication/Data/dyadicDataCreate.R` either from within an R environment (installed when running `UbuntuSetup.sh`, above) or by opening a terminal in this location and running
