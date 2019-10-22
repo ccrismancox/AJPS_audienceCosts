@@ -30,7 +30,6 @@ bash fullReplication.sh
 bash UbuntuSetup.sh
 ```
 This step may take up to 30 minutes depending on computer and internet speed.
-
     - You will be required to press "Enter" at some point (roughly 20 minutes) into the process.
     - As the software updates, other background options may occur (screen resolution may adjust, printers may be discovered, other drives may be mounted, etc.)
     - Errors may appear during this process, but so long as the code does not stop, they can be safely ignored
