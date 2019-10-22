@@ -30,6 +30,7 @@ bash fullReplication.sh
 bash UbuntuSetup.sh
 ```
 This step may take up to 30 minutes depending on computer and internet speed.
+
 8. During this step you may need to enter your password (chosen in step 3) or press "Enter" at various points.  When `UbuntuSetup.sh` finishes, the line  "`Ubuntu Setup Complete`" will print to the screen 
 
 # Instructions for compiling the dataset
