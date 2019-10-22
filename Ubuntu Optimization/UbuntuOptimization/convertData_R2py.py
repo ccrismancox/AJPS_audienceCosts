@@ -4,6 +4,9 @@ Will change to numpy arrays when needed
 '''
 import rpy2.robjects as robj #for loading the .rdata file
 import pandas.rpy.common as rpd #for converting into something python recognizes 
+#FUTURE 
+# from rpy2.robjects import pandas2ri
+# find and replace rpd.convert_robj with pandas2ri.ri2py
 import pickle as pk
 import numpy as np
 import pandas as pd
@@ -12,7 +15,7 @@ print "CONVERTING DATA FROM R TO PYTHON"
 
 #open a connection to R and load data
 robj.r("load('../../Data/DyadicMIDS_Rdata.rdata')")
-#robj.r("install.packages('data.table', lib='~/R/x86_64-pc-linux-gnu-library/3.4', repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)")
+robj.r("install.packages('data.table', lib='~/R/x86_64-pc-linux-gnu-library/3.4', repos='http://lib.stat.cmu.edu/R/CRAN/', verbose=F, quiet=T)")
 robj.r("library(data.table)")
 Xi = rpd.convert_robj(robj.r('Xi'))
 Xij = rpd.convert_robj(robj.r('Xij'))
